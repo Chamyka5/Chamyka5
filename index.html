@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-bg: #4F3438;
+            --accent-color: rgb(255, 177, 192);
+            --font-main: sans-serif;
+        }
+        body {
+            background-color: var(--primary-bg);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+            font-family: var(--font-main);
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #title {
+            position: absolute; 
+            bottom: calc(50% + 80px);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: clamp(40px, 10vw, 80px);
+            color: var(--accent-color);
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+        #f {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+        }
+        form {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            background-color: white;
+            gap: 5px;
+            padding: 10px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        input {
+            font-family: inherit;
+            font-size: 20px;
+            border: none;
+            outline: none;
+        }
+        #q {
+            flex: 1;
+            padding-left: 25px;
+            min-width: 0; 
+            background: transparent;
+        }
+        #a {
+            background-color: whitesmoke;
+            border-radius: 20px;
+            padding: 8px 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        #a:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            #title {
+                bottom: calc(50% + 65px);
+            }
+            
+            form {
+                padding: 8px;
+                width: 95%;
+            }
+            #a {
+                padding: 8px 15px;
+                font-size: 16px;
+            }
+            #q {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Google Search</h1>
+    <div id="f">
+        <form action="https://www.google.com/search">
+            <input id="q" type="text" name="q" placeholder="Search on Google" autocomplete="off">
+            <input id="a" type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
