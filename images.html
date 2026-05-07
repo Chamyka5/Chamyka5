@@ -2,8 +2,21 @@
 <html>
     <head>
         <title>Search Images</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>Search Images :D</h1>
+    <body id="bodyimages">
+        <h1 class="title">Google</h1>
+        <div id="titleimage">
+            Images
+        </div>
+        <div id="sim">
+            <form action="https://www.google.com/search" method="get">
+            <input id="q" type="text" name="q" placeholder="Search Images" autocomplete="off" required>
+            <input type="hidden" name="tbm" value="isch">
+            <input id="s" type="submit" value="Search">
+        </div>
+        <div class="pages">
+            <a href="index.html">Google Search</a>
+        </div>
     </body>
 </html>
