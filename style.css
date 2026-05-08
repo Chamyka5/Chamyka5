@@ -27,10 +27,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
-    bottom: calc(50% + 68px);
+    bottom: calc(50%);
     margin: 0;
     width: 100%;
+}
+h2{
+    position: absolute; 
+    bottom: calc(50% + 80px);
+    right: calc(50% - 150px);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color:rgb(255, 208, 0);
+    margin: 0;
+    text-align: center;
 }
 #f {
     display: flex;
