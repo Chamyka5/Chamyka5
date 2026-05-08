@@ -5,7 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>ADVANCED SEARCH :DD!!</h1>
+    <body class="body2">
+        <div id="headgoogle">
+            <h1 id="astitle">Google</h1>
+            <a class="pages" href="index.html">Google Search</a>
+        </div>
+        <div id="astitles">
+            <h1>Advanced Search</h1>
+            <h2>Show pages that contain</h2>
+        </div>
+        <form id="g" action="https://google.com/search" method="get">
+            <table id="asearch">
+                <tr>
+                    <td class="text">All these words:</td>
+                    <td class="input"><input type="text" name="as_q" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td class="text">This exact word or phrase:</td>
+                    <td class="input"><input type="text" name="as_epq" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td class="text">Any of these words:</td>
+                    <td class="input"><input type="text" name="as_oq" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td class="text">None of these words:</td>
+                    <td class="input"><input type="text" name="as_eq" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td id="r" colspan="2"><input id="y" type="submit" value="Advanced Search"></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>

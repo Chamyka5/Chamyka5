@@ -3,13 +3,96 @@
     --accent-color:#FFB1C0;
     --font-main: sans-serif;
 }
-#bodyimages{
-    background-color: #6d3f46;
-    margin: 0;
-}
 body {
     background-color: var(--primary-bg);
     margin: 0;
+}
+.body2{
+    background-color: #251618;
+    margin: 0;
+}
+#headgoogle{
+    border-bottom:1px solid rgb(143, 143, 143);
+    width: 100%;
+}
+#astitles{
+    font-family:Arial;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 70px;
+    padding-top: 20px;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+}
+#asearch{
+    font-family:Arial;
+    text-align:left;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+    padding-left: 70px;
+    padding-top: 8px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.text{
+    font-size: 15px;
+    width: 200px;
+}
+#asearch td input{
+    display: block;
+    border: 1px solid rgb(143, 143, 143);
+    background-color: transparent;
+    font-size: 18px !important;
+    min-height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    color: inherit;
+    padding-left: 10px;
+}
+#g{
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+#r{
+    text-align: right;
+    padding-top: 15px;
+}
+#y{
+    background-color: rgb(35, 46, 77) !important;
+    border-radius: 20px;
+    border: transparent !important;
+    padding: 10px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-family:Arial;
+    color: white !important;
+    font-size: 15px !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+#y:hover{
+    border: 2px solid rgb(60, 80, 134) !important;
+}
+#asearch td input:focus{
+    border: 2px solid  rgb(60, 80, 134) !important;
+    outline: none;
+}
+#asearch td:last-child{
+    width: auto;
+}
+#astitle{
+    color: white;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-left: 70px;
 }
 .title {
     position: absolute; 
@@ -31,22 +114,20 @@ body {
     margin: 0;
     width: 100%;
 }
-h2{
-    position: absolute; 
+#title2{
+    position: absolute;
     bottom: calc(50% + 80px);
-    right: calc(50% - 150px);
+    left: calc(50% + 80px);
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     color:#FFCC00;
     margin: 0;
-    text-align: center;
 }
 #f {
     display: flex;
     justify-content: center;
     z-index: 10;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
